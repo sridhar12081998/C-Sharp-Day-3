@@ -1,0 +1,14 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		String s = "My name is SRIDHAR D";
+		string uppercase = s.ToUpper();
+		string lowercase = s.ToLower();
+		Console.WriteLine(s.ToUpper());
+		Console.WriteLine(s.ToLower());
+		Console.ReadLine();
+	}
+}

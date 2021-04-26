@@ -1,0 +1,33 @@
+using System;
+					
+public class Program
+{
+	int a;
+	int b;
+	Program(int _a, int _b)
+	{
+	a = _a;
+	b = _b;
+	}
+	public static Program operator*(Program _obj1, Program _obj2)
+	{
+		Program _obj3 = new Program(0, 0);
+	_obj3.a = _obj1.a * _obj2.a;
+	_obj3.b = _obj1.b * _obj2.b;
+		return _obj3;
+	}
+	public static void showvalue(Program _obj)
+	{
+	Console.WriteLine("a =" + _obj.a);
+	Console.WriteLine("b =" + _obj.b);
+	}
+	public static void Main()
+	{
+		Program obj1 = new Program(4,6);
+		Program obj2 = new Program(2,3);
+		Program obj3 = new Program(0,0);
+		obj3 = obj1*obj2;
+		Program.showvalue(obj3);
+		Console.ReadLine();
+	}
+}

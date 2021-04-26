@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		String s = "It is a bad colour";
+		Console.WriteLine("Given string:" + s);
+		string result = "is a";
+		Console.WriteLine("Extract string:" + result);
+		if (s.Contains(result))
+		{
+		Console.WriteLine("Result 'is a' is present in Given string");
+		}
+		Console.ReadLine();
+	}
+}

@@ -1,0 +1,32 @@
+using System;
+
+namespace LogicalPrograms
+{
+    class Program
+    {
+        static void Main()
+        {
+			string input;
+            char[] array;
+	        int i;
+			int length;
+			char ch;
+			Console.WriteLine("Enter a string:");
+			input = Console.ReadLine();
+			length = input.Length;
+            for(i = 0; i < length; i++)
+			{
+			ch=array[i];
+				if(char.IsLower(ch))
+				{
+				Console.WriteLine("char.ToUpper(ch)");
+				}
+				else
+				{
+					Console.WriteLine("char.ToLower(ch)");
+			     }
+			}
+             Console.ReadLine();
+        }
+    }
+}
